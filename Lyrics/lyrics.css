@@ -1,0 +1,50 @@
+body{
+      background-color:  #0b0b0b;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    [music="lyrics"] {
+      width: 1200%;
+      height: 50vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      scroll-behavior: smooth;
+    }
+
+    .line {
+      font-size: 1.6em;
+      opacity: 0.3;
+      transition: all 0.5s ease;
+      margin: 12px 0;
+    }
+   .line {
+    position: absolute;
+    opacity: 0;
+    animation: fade 24s linear infinite;
+  }
+
+    .line:nth-child(1) { animation: fade 10s forwards; animation-delay: 0.2s; } /* i wanna be yours */
+    .line:nth-child(2) { animation: fade 10s forwards; animation-delay: 3.3s; } /* Breathing in your dust */
+    .line:nth-child(3) { animation: fade 15s forwards; animation-delay: 6.5s; } /* I wanna be your Ford Cortina */
+    .line:nth-child(4) { animation: fade 10s forwards; animation-delay: 10.8s; } /* I will never rust */
+    .line:nth-child(5) { animation: fade 12s forwards; animation-delay: 13.8s; } /* If you like your coffee hot */
+    .line:nth-child(6) { animation: fade 12s forwards; animation-delay: 16.8s; } /* Let me be your coffee pot */
+    .line:nth-child(7) { animation: fade 10s forwards; animation-delay: 19.8s; } /* You call the shots, babe */
+    .line:nth-child(8) { animation: fade 10s forwards; animation-delay: 22.8s; } /* I just wanna be yours */
+
+    @keyframes fade {
+    0% { opacity: 0; transform: translateY(20px); }
+    5% { opacity: 1; transform: translateY(0); }
+    25% { opacity: 1; transform: translateY(0); }
+    30% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 0; }
+  }
