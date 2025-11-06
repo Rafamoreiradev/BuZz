@@ -7,7 +7,7 @@ body {
   color: #ddd; /* cor do texto */
 }
 .bar {
-  background-color: #1A232F; /* fundo pagina */
+  background-color: #2e3f55; /* fundo pagina */
   color: white;
   display: flex; /* alinha itens na mesma linha */ 
   justify-content: space-between; /* logo à esquerda, links à direita */
